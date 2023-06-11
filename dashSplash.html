@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard AMS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/logo.svg" alt="Logo">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" onclick="navigateToHome()">Home</a></li>
+            <li><a href="index.html#about" onclick="navigateToAbout()">About</a></li>
+            <li><a href="index.html#book" onclick="navigateToBook()">Book</a></li>
+            <li><a href="index.html#footer" onclick="navigateToContact()">Contact</a></li>
+            <li><button id="dash" class="dash" onclick="navigateToDashboard()">Dashboard</button></li>
+          </ul>
+        </nav>
+      </header>
+
+
+      <div id="dashOption" class="dashOption">
+        <button id="adminSelect" class="adminSelect" onclick="navigateToAdminLogin()">Admin</button><br>
+        <button id="userSelect" class="userSelect" onclick="navigateToUserLogin()">User</button>
+      </div>
+
+
+    <footer id="footer">
+        <div class="footer-left">
+            <pf>Project done by</pf><br><br>
+            <strong class="bold">Shibin Shibu</strong><br><br><br>
+            <pf>Email</pf><br><br>
+            <strong>shibinsb01@gmail.com</strong><br><br><br>
+            <pf>Contact</pf><br><br>
+            <strong>+91 77360 58923</strong>
+        </div>
+        <div class="footer-center">
+            <pf>Socials</pf>
+            <p>
+                <a href="https://bio.link/shibinshibu01">
+                    <img src="src/Foot/link.svg" alt="link">
+                </a>
+                <a href="https://www.linkedin.com/in/shibinshibu01/">
+                    <img src="src/Foot/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="https://github.com/shibinshibu01">
+                    <img src="src/Foot/github.svg" alt="github">
+                </a>
+                <a href="https://www.instagram.com/shibinshibu01/">
+                    <img src="src/Foot/instagram.svg" alt="instagram">
+                </a>
+            </p>    
+        </div>
+        <div class="footer-right">
+            <a href="index.html">
+                <img src="src/Foot/logo.svg" alt="Logo">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

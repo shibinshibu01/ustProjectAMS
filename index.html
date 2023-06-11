@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Management Systems</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/logo.svg" alt="Logo">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#content">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><button id="dash" class="dash" onclick="navigateToDashboard()">Dashboard</button></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <div id="content" class="home">
+        <div id="scroll-container">
+            <div class="scrolling-text">
+                <img src="src/ams.svg" alt="Scrolling SVG">
+            </div>
+        </div>
+    </div>
+    <div class="project-done">
+        Project done by <br>
+        <strong class="bold">Shibin Shibu</strong><br>
+        <a href="https://bio.link/shibinshibu01">
+            <img src="src/link.svg" alt="link">
+        </a>
+        <a href="https://www.linkedin.com/in/shibinshibu01/">
+            <img src="src/linkedin.svg" alt="linkedin">
+        </a>
+        <a href="https://github.com/shibinshibu01">
+            <img src="src/github.svg" alt="github">
+        </a>
+        <a href="https://www.instagram.com/shibinshibu01/">
+            <img src="src/instagram.svg" alt="instagram">
+        </a>
+    </div>
+    <div class="about" id="about">
+        <h1>About Us</h1>
+        <div class="about2">
+            <p>Welcome to our Appointment Management System! We are dedicated to providing companies and service providers with a streamlined solution for efficient appointment scheduling. Our user-friendly platform allows potential customers to easily view and select their preferred appointment times based on available slots. With many features, our system simplifies the process, enhances customer satisfaction, and optimizes business operations. Experience the convenience and benefits of our Appointment Management System and revolutionize your appointment scheduling process.</p>
+            <p>Join us on this journey and let us transform the way you manage appointments. Experience the convenience and benefits of our Appointment Management System today!</p>
+        </div>
+    </div>
+
+    <div class="book" id="book">
+        <h1>Book an Appointment</h1>
+        <div class="booking-form">
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="time">Preferred Time:</label>
+                <select id="time" name="time" required>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <button type="submit"><b>Book Now</b></button>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-left">
+            <pf>Project done by</pf><br><br>
+            <strong class="bold">Shibin Shibu</strong><br><br><br>
+            <pf>Email</pf><br><br>
+            <strong>shibinsb01@gmail.com</strong><br><br><br>
+            <pf>Contact</pf><br><br>
+            <strong>+91 77360 58923</strong>
+        </div>
+        <div class="footer-center">
+            <pf>Socials</pf>
+            <p>
+                <a href="https://bio.link/shibinshibu01">
+                    <img src="src/Foot/link.svg" alt="link">
+                </a>
+                <a href="https://www.linkedin.com/in/shibinshibu01/">
+                    <img src="src/Foot/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="https://github.com/shibinshibu01">
+                    <img src="src/Foot/github.svg" alt="github">
+                </a>
+                <a href="https://www.instagram.com/shibinshibu01/">
+                    <img src="src/Foot/instagram.svg" alt="instagram">
+                </a>
+            </p>    
+        </div>
+        <div class="footer-right">
+            <a href="index.html">
+                <img src="src/Foot/logo.svg" alt="Logo">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

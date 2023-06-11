@@ -1,0 +1,363 @@
+/* Reset default styles */
+body {
+    background-color: #EADF9D;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Home section styles */
+  .home {
+    background-color: #000000;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 98%;
+    transition: top 0.3s ease-in-out;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #FCFDFF;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #C54834;
+  }
+  
+  nav {
+    transform: translateY(-10%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  header:hover nav {
+    transform: translateY(0);
+  }
+  
+  /* Scrolling text styles */
+  .scrolling-text img {
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Project done section styles */
+  .project-done {
+    background-color: #000000;
+    font-weight: 600;
+    line-height: 200%;
+    font-size: 12px;
+    text-align: center;
+    color: #FCFDFF;
+    padding-bottom: 50px;
+  }
+  
+  .project-done strong {
+    font-size: 20px;
+    color: #EADF9D;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-done strong:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-left {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .footer-left pf {
+    line-height: 180%;
+    font-size: 14px;
+    margin: 0;
+    color: #FCFDFF;
+  }
+  
+  .footer-left strong {
+    font-size: 20px;
+    color: #EADF9D;
+  }
+  
+  .footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+  }
+  
+  .footer-center {
+    color: #FCFDFF;
+    justify-content: center;
+  }
+  
+  .footer-center a img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-center a:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* About section styles */
+  .about {
+    padding-top: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  h1 {
+    color: #C54834;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  h1:hover {
+    color: #000000;
+  }
+  
+  p {
+    color: #000000;
+    line-height: 1.5;
+  }
+  
+  .about2 {
+    margin-bottom: 30px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  /* Book section styles */
+  .book {
+    padding: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .booking-form {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .booking-form label {
+    display: box;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .booking-form label:hover {
+    color: #C54834;
+  }
+  
+  .booking-form input[type="text"],
+  .booking-form input[type="email"],
+  .booking-form input[type="tel"],
+  .booking-form input[type="date"],
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #EADF9D;
+    transition: border-color 0.3s ease-in-out;
+    color: #000000;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+  }
+  
+  .booking-form textarea {
+    resize: vertical;
+  }
+  
+  .booking-form input[type="text"]:focus,
+  .booking-form input[type="email"]:focus,
+  .booking-form input[type="tel"]:focus,
+  .booking-form input[type="date"]:focus,
+  .booking-form select:focus,
+  .booking-form textarea:focus {
+    outline: none;
+    border-color: #C54834;
+    background-color: #FCFDFF;
+  }
+  
+  .booking-form input[type="text"]::placeholder,
+  .booking-form input[type="email"]::placeholder,
+  .booking-form input[type="tel"]::placeholder,
+  .booking-form input[type="date"]::placeholder,
+  .booking-form select::placeholder,
+  .booking-form textarea::placeholder {
+    color: #999999;
+  }
+  
+  .booking-form button {
+    background-color: #C54834;
+    color: #EADF9D;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .booking-form button:hover {
+    background-color: #000000;
+    color: #C54834;
+    transform: scale(1.1);
+  }
+  
+  .booking-form button:active {
+    transform: scale(0.98);
+  }
+
+  .dash {
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #FCFDFF;
+    text-decoration: none;
+    background-color: #C54834;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dash:hover {
+    background-color: #000000;
+    color: #C54834;
+    transform: scale(1.1);
+  }
+  
+  .dash:active {
+    transform: scale(0.98);
+  }
+  
+  .dashOption {
+    background-color: #C54834;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    padding-left:40%;
+    padding-right: 40%;
+    justify-content: center;
+  }
+
+  .userSelect {
+    width: 291px;
+    height:84px;
+    margin: 10px;
+    padding: 10px 50px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #C54834;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .userSelect:hover {
+    background-color: #EADF9D;
+    color: #000000;
+    transform: scale(1.1);
+  }
+  
+  .userSelect:active {
+    transform: scale(0.98);
+  }
+
+  .adminSelect {
+    width: 291px;
+    height:84px;
+    margin: 10px;
+    padding: 10px 50px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #C54834;
+    text-decoration: none;
+    background-color: #FCFDFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .adminSelect:hover {
+    background-color: #EADF9D;
+    color: #FCFDFF;
+    transform: scale(1.1);
+  }
+  
+  .adminSelect:active {
+    transform: scale(0.98);
+  }

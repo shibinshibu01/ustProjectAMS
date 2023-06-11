@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="styleAdminLogin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/logo.svg" alt="Logo">
+          </a>
+        </div>
+        <nav>
+          <button id="dash" class="dash" onclick="navigateToHome()">Home</button>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h1>Welcome back Admin!</h1>
+        <p>Login to your account</p>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
