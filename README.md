@@ -1,4 +1,5 @@
 # Appointment Management System
+Site: https://shibinshibu01.github.io/ustProjectAMS/
 
 Welcome to the Appointment Management System repository! This project was developed as part of a 5-day workshop conducted by UST Global.
 
